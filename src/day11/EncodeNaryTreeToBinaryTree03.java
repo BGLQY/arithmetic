@@ -94,7 +94,7 @@ public class EncodeNaryTreeToBinaryTree03 {
 		 */
 		public List<Node> de(TreeNode left) {
 			List<Node> nodeList = new ArrayList<>();
-			while (left.right != null){
+			while (left != null){
 				Node node = new Node(left.val,de(left.left));
 				nodeList.add(node);
 				left = left.right;
