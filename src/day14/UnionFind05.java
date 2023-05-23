@@ -185,6 +185,9 @@ public class UnionFind05 {
 			}
 			int a = (int) (Math.random() * 10);
 			int b = (int) (Math.random() * 10);
+			if (!generate.contains(a) || !generate.contains(b)) {
+				continue;
+			}
 			unionFind2.union(a,b);
 			unionFind.union(a,b);
 		}
